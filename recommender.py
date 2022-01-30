@@ -6,11 +6,11 @@ from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 def load_synop_data():
-    anime_synop_df = pd.read_csv('../input/anime-recommendation-database-2020/anime_with_synopsis.csv')
+    anime_synop_df = pd.read_csv('./datasets/anime-recommendation-database-2020/anime_with_synopsis.csv')
     return anime_synop_df
 
 def load_complete_data():
-    anime_complete_df = pd.read_csv('../input/anime-recommendation-database-2020/anime.csv')
+    anime_complete_df = pd.read_csv('./datasets/anime-recommendation-database-2020/anime.csv')
     return anime_complete_df
 
 def preprocessing(anime_synop_df, anime_complete_df):
